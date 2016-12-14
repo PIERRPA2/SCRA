@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_novrp_cr_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Planning</label>
+            <language>en</language>
+            <name>x_novrp_cr_request</name>
+            <sequence>1</sequence>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-12 11:50:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ecf7f0b4f6fe2003fb88e401310c7b1</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-12 11:51:44</sys_updated_on>
+            <value>planning</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inspection</label>
+            <language>en</language>
+            <name>x_novrp_cr_request</name>
+            <sequence>2</sequence>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-12 11:51:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aadfbf0b4f6fe2003fb88e401310c744</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-12 11:51:45</sys_updated_on>
+            <value>inspection</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rework</label>
+            <language>en</language>
+            <name>x_novrp_cr_request</name>
+            <sequence>3</sequence>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-12 11:51:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>96eff30b4f6fe2003fb88e401310c751</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-12 11:51:47</sys_updated_on>
+            <value>rework</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_novrp_cr_request</name>
+            <sequence>4</sequence>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-12 11:51:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5cfff30b4f6fe2003fb88e401310c751</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-12 11:51:49</sys_updated_on>
+            <value>complete</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_novrp_cr_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-12 11:50:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>aadffb0b4f6fe2003fb88e401310c761</sys_id>
+            <sys_mod_count>12</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
+            <sys_update_name>sys_choice_x_novrp_cr_request_status</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-12 11:51:49</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

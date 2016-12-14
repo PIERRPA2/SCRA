@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Change" max_length="40" name="x_novrp_cr_change" type="collection">
+        <element label="Client Script" max_length="8000" name="client_script" type="script"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
+        <element default="0" label="Findings" max_length="40" name="findings" type="integer"/>
+        <element label="HTML" max_length="8000" name="html" type="html"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element dependent="table" dependent_on_field="table" label="Related Record" max_length="32" name="related_record" read_only="true" type="document_id" use_dependent_field="true"/>
+        <element label="Request" max_length="32" name="request" read_only="true" reference="x_novrp_cr_request" type="reference"/>
+        <element label="Server Script" max_length="8000" name="server_script" type="script"/>
+        <element label="Table" max_length="40" name="table" read_only="true" type="table_name"/>
+        <element label="Type" max_length="40" name="type" read_only="true" type="string"/>
+        <index name="index">
+            <element name="request"/>
+        </index>
+        <index name="index2">
+            <element name="related_record"/>
+        </index>
+    </element>
+</database>
