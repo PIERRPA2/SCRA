@@ -8,7 +8,7 @@
         <sys_class_name>sys_ui_message</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2016-12-13 14:04:03</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1ad7edef4fe3660062b50fbf0310c73c</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name>nvs.code_review.rule.form.message.top</sys_name>

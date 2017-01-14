@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Application" max_length="40" name="x_novrp_cr_application" type="collection">
+        <element label="Application" max_length="32" name="application" reference="sys_scope" type="reference"/>
+        <element default="0" label="Changes" max_length="40" name="changes" type="integer"/>
+        <element default="0" label="Errors" max_length="40" name="errors" type="integer"/>
+        <element default="0" label="Findings" max_length="40" name="findings" type="integer"/>
+        <element default="0" label="Recommendations" max_length="40" name="recommendations" type="integer"/>
+        <index name="index">
+            <element name="application"/>
+        </index>
+    </element>
+</database>

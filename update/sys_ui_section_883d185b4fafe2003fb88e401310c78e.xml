@@ -5,13 +5,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2016-12-12 13:59:04</sys_created_on>
-            <sys_id>c43d185b4fafe2003fb88e401310c791</sys_id>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>9e5f57194ff3e6003fb88e401310c70d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:59:04</sys_updated_on>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>number</element>
             <position>1</position>
             <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2016-12-12 13:59:04</sys_created_on>
-            <sys_id>483d185b4fafe2003fb88e401310c791</sys_id>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>125f57194ff3e6003fb88e401310c70e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:59:04</sys_updated_on>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,69 +33,139 @@
             <element>status</element>
             <position>2</position>
             <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2016-12-12 13:59:04</sys_created_on>
-            <sys_id>c83d185b4fafe2003fb88e401310c791</sys_id>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>925f57194ff3e6003fb88e401310c70e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:59:04</sys_updated_on>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>findings</element>
+            <position>3</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>165f57194ff3e6003fb88e401310c70e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>errors</element>
+            <position>4</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>965f57194ff3e6003fb88e401310c70e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recommendations</element>
+            <position>5</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>1a5f57194ff3e6003fb88e401310c70e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>6</position>
             <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2016-12-12 13:59:04</sys_created_on>
-            <sys_id>4c3d185b4fafe2003fb88e401310c791</sys_id>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>9a5f57194ff3e6003fb88e401310c70e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:59:04</sys_updated_on>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>update_set</element>
-            <position>4</position>
+            <element>changes</element>
+            <position>7</position>
             <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2016-12-12 13:59:04</sys_created_on>
-            <sys_id>cc3d185b4fafe2003fb88e401310c791</sys_id>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>1e5f57194ff3e6003fb88e401310c70e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:59:04</sys_updated_on>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>application</element>
+            <position>8</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>9e5f57194ff3e6003fb88e401310c70e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>update_set</element>
+            <position>9</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>125f57194ff3e6003fb88e401310c70f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assigned_to</element>
-            <position>5</position>
+            <position>10</position>
             <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2016-12-12 13:59:04</sys_created_on>
-            <sys_id>403d185b4fafe2003fb88e401310c792</sys_id>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>925f57194ff3e6003fb88e401310c70f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:59:04</sys_updated_on>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>6</position>
+            <position>11</position>
             <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2016-12-12 13:59:04</sys_created_on>
-            <sys_id>c03d185b4fafe2003fb88e401310c792</sys_id>
+            <sys_created_on>2016-12-19 09:15:13</sys_created_on>
+            <sys_id>165f57194ff3e6003fb88e401310c70f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_request" sys_domain="global" view="Default view">883d185b4fafe2003fb88e401310c78e</sys_ui_section>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:59:04</sys_updated_on>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -107,11 +177,11 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>paul.galmot</sys_created_by>
             <sys_created_on>2016-12-12 13:59:04</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>883d185b4fafe2003fb88e401310c78e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>7</sys_mod_count>
             <sys_name>x_novrp_cr_request</sys_name>
             <sys_overrides/>
             <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
@@ -120,7 +190,7 @@
             <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
             <sys_update_name>sys_ui_section_883d185b4fafe2003fb88e401310c78e</sys_update_name>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:59:04</sys_updated_on>
+            <sys_updated_on>2016-12-19 09:15:13</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

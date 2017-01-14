@@ -51,8 +51,8 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2016-12-12 13:52:38</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>d5ab981b4fafe2003fb88e401310c775</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e635fb34fef660062b50fbf0310c72b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Comments</sys_name>
         <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
@@ -60,8 +60,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
         <sys_update_name>sys_dictionary_x_novrp_cr_change_comments</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2016-12-12 13:52:38</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2016-12-14 16:32:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

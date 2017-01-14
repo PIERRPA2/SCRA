@@ -8,7 +8,7 @@
         <sys_class_name>sys_number</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2016-12-12 11:59:00</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>ddb1c85b4f6fe2003fb88e401310c787</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>FIN</sys_name>
