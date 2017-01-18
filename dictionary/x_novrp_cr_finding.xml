@@ -2,9 +2,9 @@
 <database>
     <element label="Finding" max_length="40" name="x_novrp_cr_finding" type="collection">
         <element label="Change" max_length="32" name="change" read_only="true" reference="x_novrp_cr_change" type="reference"/>
+        <element label="Custom Review" max_length="32" name="custom_review" reference="x_novrp_cr_custom_review" type="reference"/>
         <element label="Message" max_length="4000" name="message" type="string"/>
         <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element label="Request" max_length="32" name="request" read_only="true" reference="x_novrp_cr_request" type="reference"/>
         <element label="Rule" max_length="32" name="rule" reference="x_novrp_cr_rule" type="reference"/>
         <element choice="3" default="new" label="Status" max_length="40" name="status" type="string">
             <choice>
@@ -19,13 +19,13 @@
             </choice>
         </element>
         <index name="index">
-            <element name="request"/>
-        </index>
-        <index name="index2">
             <element name="change"/>
         </index>
-        <index name="index3">
+        <index name="index2">
             <element name="rule"/>
+        </index>
+        <index name="index3">
+            <element name="custom_review"/>
         </index>
     </element>
 </database>

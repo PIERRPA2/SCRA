@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Custom Review" max_length="40" name="x_novrp_cr_custom_review" type="collection">
+        <element label="Applications" max_length="4000" name="applications" reference="sys_scope" type="glide_list"/>
+        <element default="0" label="Changes" max_length="40" name="changes" type="integer"/>
+        <element default="0" label="Errors" max_length="40" name="errors" type="integer"/>
+        <element default="0" label="Findings" max_length="40" name="findings" type="integer"/>
+        <element label="Include Inactive Record" max_length="40" name="include_inactive_record" type="boolean"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="0" label="Recommendations" max_length="40" name="recommendations" type="integer"/>
+        <element label="Update Sets" max_length="4000" name="update_sets" reference="sys_update_set" type="glide_list"/>
+    </element>
+</database>

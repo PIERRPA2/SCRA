@@ -29,23 +29,30 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var request = new GlideRecord("x_novrp_cr_request");
-
-	if(!request.get(current.request)){
-		gs.error("Cannot find related request");
-		current.setAbortAction(true);
-	}
+	var review = getReview();
 	
 	if(current.type == "error"){
-		request.errors += 1;
+		review.errors += 1;
 	}
 
 	if(current.type == "recommendation"){
-		request.recommendations += 1;
+		review.recommendations += 1;
 	}
 	
-	request.findings = request.errors + request.recommendations;
-	request.update();
+	review.findings = review.errors + review.recommendations;
+	review.update();
+	
+	function getReview(){
+		if(current.custom_review != null){
+			var review = new GlideRecord("x_novrp_cr_custom_review");
+
+			if(review.get(current.custom_review)){
+				return review;
+			}
+		}
+		
+		return null;
+	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
@@ -54,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b53098e04fbf66003fb88e401310c7cb</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>NVS - Calculate Findings Number</sys_name>
         <sys_overrides/>
         <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
@@ -63,7 +70,7 @@
         <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
         <sys_update_name>sys_script_b53098e04fbf66003fb88e401310c7cb</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2016-12-19 09:45:20</sys_updated_on>
+        <sys_updated_on>2017-01-16 13:28:45</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

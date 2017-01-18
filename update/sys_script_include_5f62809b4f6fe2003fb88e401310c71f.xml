@@ -11,94 +11,101 @@
 CodeReviewAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	scope: 'x_novrp_cr',
 	result: {"success": false, "data": null, "message": ""},
+	filterClass: "",
 	
-	requestApplicationReview: function(application){
-		try{
-			if(application == undefined){
-				this.result.success = false;
-				this.result.message = "Please specify an application";
+	initialize: function(){
+		var rule = new GlideAggregate("x_novrp_cr_rule");
+		rule.addAggregate("COUNT", "table");
+		rule.query();
 
-				return new global.JSON().encode(this.result);
-			}
-			
-			var updateSets = this._getUpdateSets(application);
-			
-			if(!updateSets.hasNext()){
-				this.result.success = false;
-				this.result.message = "The application contains no update sets";
-			}
-			
-			while(updateSets.next()){
-				this.requestCodeReview(updateSets);
-			}
-			
-			this.result.success = true;
-			return new global.JSON().encode(this.result);
-		}catch(exception){
-			gs.error("requestApplicationReview: " + exception);
-			this.result.message = "An unexpected error occured. Please try again.";
-			return new global.JSON().encode(this.result);
+		while(rule.next()){
+			this.filterClass += rule.table;
 		}
 	},
 	
-	//Method to create and update the request
-	requestCodeReview: function(updateSet){
+	requestCustomReview: function(review){
 		try{
-			if(updateSet == undefined){
+			if(review == undefined){
 				this.result.success = false;
-				this.result.message = "Please specify an update set";
-				
+				this.result.message = "Please specify an application or an update set";
+
 				return new global.JSON().encode(this.result);
 			}
 			
-			var codeReviewRequest = this._createCodeReview(updateSet);
-			var total = 0;
-			var previousRelatedRecord = "";
-			var update = this._getChanges(updateSet);
+			var applications = review.applications;
+			var relatedRecord = null;
 			
-			if(!update.hasNext()){
-				this.result.success = true;
-				this.result.data = {
-								"number": codeReviewRequest.number.toString(),
-								"sys_id": codeReviewRequest.sys_id.toString(),
-								"total": total
-							   };
-			}
-			
-			while(update.next()){
-				var relatedRecord = this._getRelatedRecord(update);
+			if(applications != ""){
+				var query = "sys_scope.sys_idIN" + applications +
+							"^sys_class_name!=sys_metadata_delete";
 				
-				if(relatedRecord != null && 
-				   relatedRecord.sys_class_name != "sys_metadata_delete" &&
-				   (previousRelatedRecord == "" || 
-				   relatedRecord.sys_id.toString() != previousRelatedRecord))
-				{
-					var change = new GlideRecordSecure(this.scope + "_change");
-					change.addQuery("request", codeReviewRequest.sys_id);
-					change.addQuery("related_record", relatedRecord.sys_id);
-					change.query();
+				var file = new GlideRecord("sys_metadata");
+				file.addEncodedQuery("sys_scope.sys_idIN" + applications +
+									 "^sys_class_name!=sys_metadata_delete");
+				file.query();
 
-					if(!change.next()){
-						total += this._createChange(update, codeReviewRequest, relatedRecord);
-					}else{
-						this._updateChange(relatedRecord, change);
-					}
-					previousRelatedRecord = relatedRecord.sys_id.toString();
+				while(file.next()){
+					this._refreshFindings(review, file.sys_update_name, null);
 				}
 			}
 			
-			this.result.success = true;
-			this.result.data = {
-								"number": codeReviewRequest.number.toString(),
-								"sys_id": codeReviewRequest.sys_id.toString(),
-								"total": total
-							   };
+			var updateSets = review.update_sets;
 			
+			if(updateSets != ""){
+				var update = new GlideRecord("sys_update_xml");
+				update.addEncodedQuery("update_set.sys_idIN" + updateSets);
+				update.query();
+
+				while(update.next()){
+					this._refreshFindings(review, update.name, update.update_set.name);
+				}
+			}
+			
+			action.setRedirectURL("x_novrp_cr_custom_review.do?sys_id=" + review.sys_id);
+			
+			this.result.success = true;
 			return new global.JSON().encode(this.result);
 		}catch(exception){
 			gs.error("requestCodeReview: " + exception);
 			this.result.message = "An unexpected error occured. Please try again.";
 			return new global.JSON().encode(this.result);
+		}
+	},
+	
+	_refreshFindings: function(review, filename, updateSet){
+		try{
+			var file = this._getRelatedRecord(filename);
+			
+			if(file == null){
+				return null;
+			}
+			
+			if(!file.active && !review.include_inactive_record){
+				return null;
+			}
+			
+			if(this.filterClass.indexOf(file.sys_class_name) == -1){
+				return null;
+			}
+
+			var change = new GlideRecordSecure(this.scope + "_change");
+			change.addQuery("custom_review", review.sys_id);
+			change.addQuery("related_record", file.sys_id);
+			change.query();
+
+			if(!change.next()){
+				change = this._createChange(file);
+				change.custom_review = review.sys_id;
+				change.update_set = updateSet;
+				change.insert();
+			}else{
+				this._updateChange(file, change);
+			}
+
+			return change;
+		}catch(exception){
+			gs.error("_refreshFindings: " + exception);
+			throw exception;
 		}
 	},
 	
@@ -158,7 +165,7 @@ CodeReviewAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor
 			finding.type = rule.type;
 			finding.message = rule.message;
 			finding.rule = rule.sys_id;
-			finding.request = record.request.sys_id;
+			finding.custom_review = record.custom_review;
 			finding.change = record.sys_id;
 			finding.insert();
 			
@@ -190,17 +197,15 @@ CodeReviewAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor
 		}
 	},
 	
-	_createChange: function(update, codeReviewRequest, relatedRecord){
+	_createChange: function(relatedRecord){
 		try{
 			var change = new GlideRecord(this.scope + "_change");
 			change.newRecord();
-			change.request = codeReviewRequest.sys_id;
-			change.type = update.type;
 			change.table = relatedRecord.sys_class_name;
 			change.related_record = relatedRecord.sys_id;
+			change.application = relatedRecord.sys_scope.name;
 			change = this._mapChangeWithRecord(change, relatedRecord);
-			change.insert();
-			return 1;
+			return change;
 		}catch(exception){
 			gs.error("_createChange: " + exception);
 			throw exception;
@@ -221,6 +226,7 @@ CodeReviewAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor
 	
 	_mapChangeWithRecord: function(change, record){
 		try{
+			var script = "";
 			if(record.sys_class_name == "sys_script_client"){
 				change.client_script = record.getValue("script");
 			}
@@ -264,10 +270,9 @@ CodeReviewAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor
 
 	_getChanges: function(updateSet){
 		try{
-			var updateType = gs.getProperty(this.scope + ".update_type");
 			var update = new GlideRecord("sys_update_xml");
 			var encodedQuery = "update_set=" + updateSet.sys_id;
-			encodedQuery += "^action!=DELETE^typeIN " + updateType;
+			encodedQuery += "^action=INSERT_OR_UPDATE";
 			
 			update.addEncodedQuery(encodedQuery);
 			update.orderBy("name");
@@ -296,43 +301,23 @@ CodeReviewAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor
 			throw exception;
 		}
 	},
-	
-	_createCodeReview: function(updateSet){
-		try{
-			var codeReview = new GlideRecord(this.scope + "_request");
 			
-			if(codeReview.get("update_set", updateSet.sys_id)){
-				return codeReview;
-			}
-			
-			codeReview.newRecord();
-			codeReview.application = updateSet.application.sys_id;
-			codeReview.update_set = updateSet.sys_id;
-			codeReview.insert();
-
-			return codeReview;
-		}catch(exception){
-			gs.error("_createCodeReview: " + exception);
-			throw exception;
-		}
-	},
-			
-	_getRelatedRecord: function(update){
+	_getRelatedRecord: function(updateName){
 		try{
 			var file = new GlideRecord("sys_metadata");
-			file.addQuery("sys_update_name", update.name.toString());
+			file.addQuery("sys_update_name", updateName.toString());
 			file.query();
 			
 			if(!file.next()) {
 				return null;
 			}
-
+			
 			var relatedRecord = new GlideRecord(file.sys_class_name);
 			relatedRecord.get(file.sys_id);
 			return relatedRecord;
 		}catch(exception){
 			gs.error("_getRelatedRecord: " + exception);
-			throw exception;
+			return null;
 		}
 	},
 	
@@ -343,7 +328,7 @@ CodeReviewAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor
         <sys_created_on>2016-12-12 12:03:36</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5f62809b4f6fe2003fb88e401310c71f</sys_id>
-        <sys_mod_count>193</sys_mod_count>
+        <sys_mod_count>285</sys_mod_count>
         <sys_name>CodeReviewAjaxUtil</sys_name>
         <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
         <sys_policy>read</sys_policy>
@@ -351,6 +336,6 @@ CodeReviewAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor
         <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
         <sys_update_name>sys_script_include_5f62809b4f6fe2003fb88e401310c71f</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2016-12-19 09:04:19</sys_updated_on>
+        <sys_updated_on>2017-01-18 15:42:07</sys_updated_on>
     </sys_script_include>
 </record_update>

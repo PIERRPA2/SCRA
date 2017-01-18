@@ -141,6 +141,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>custom_review</element>
+            <position>10</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-01-16 10:36:25</sys_created_on>
+            <sys_id>fc7ebbda4fdcf6403fb88e401310c76d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_cr_finding" sys_domain="global" view="Default view">fbaa10d74fafe2003fb88e401310c7d6</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-01-16 10:36:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
@@ -153,7 +167,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>fbaa10d74fafe2003fb88e401310c7d6</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_name>x_novrp_cr_finding</sys_name>
             <sys_overrides/>
             <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
@@ -162,7 +176,7 @@
             <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
             <sys_update_name>sys_ui_section_fbaa10d74fafe2003fb88e401310c7d6</sys_update_name>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-19 10:50:24</sys_updated_on>
+            <sys_updated_on>2017-01-16 10:36:25</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>
