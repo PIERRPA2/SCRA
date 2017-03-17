@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_novrp_cr.CodeReviewAjax</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CodeReviewAjax</name>
+        <script><![CDATA[var CodeReviewAjax = Class.create();
+CodeReviewAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	scope: 'x_novrp_cr',
+	result: {"success": false, "data": null, "message": ""},
+	
+	evaluateRule: function(){
+		try{
+			var sys_id = this.getParameter("sysparm_rule_sys_id");
+			var record = this.getParameter("sysparm_record");
+			var rule = new GlideRecordSecure(this.scope + "_rule");
+			
+			if(!rule.get(sys_id)){
+				throw "Cannot match any rule with given sys_id";
+			}
+			
+			var glideRecord = new GlideRecord(rule.table);
+			if(!glideRecord.get(record)){
+				throw "Cannot match any record with given record id in table " + rule.table;
+			}
+			
+			var evaluator = new GlideScopedEvaluator();
+			evaluator.putVariable('current', glideRecord);
+			evaluator.putVariable('answer', false);
+			evaluator.evaluateScript(rule, "script", null);
+			var answer = evaluator.getVariable('answer');
+
+			this.result.data = {
+								"result": answer,
+								"record": glideRecord.name.toString(),
+								"table": rule.table
+								};
+			this.result.success = true;
+			return new global.JSON().encode(this.result);
+		}catch(exception){
+			this.result.message = "An unexpected error occured. Please try again.";
+			this.result.error = exception;
+			return new global.JSON().encode(this.result);
+		}
+	},
+	
+    type: 'CodeReviewAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-01-19 11:24:14</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1a06ef1f4f947a4062b50fbf0310c7cd</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>CodeReviewAjax</sys_name>
+        <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
+        <sys_update_name>sys_script_include_1a06ef1f4f947a4062b50fbf0310c7cd</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-01-19 12:35:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

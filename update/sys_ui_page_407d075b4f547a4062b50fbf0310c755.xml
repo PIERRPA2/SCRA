@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[addLoadEvent(function(){
+
+});
+
+function runTest(){
+	setInformation("Running test...");
+	
+	var rule = gel("rule");
+	var record = gel("record");
+	
+	if(record.value == ""){
+		setInformation("Please select a record");
+		return false;
+	}
+	
+	setInformation("Testing rule...");
+	
+	var ajax = new GlideAjax("x_novrp_cr.CodeReviewAjax");
+	ajax.addParam("sysparm_name", "evaluateRule");
+	ajax.addParam("sysparm_rule_sys_id", rule.value);
+	ajax.addParam("sysparm_record", record.value);
+	
+	ajax.getXMLAnswer(function(answer){
+		console.log(answer);
+		var result = JSON.parse(answer);
+		
+		if(result.success){
+			var text = "";
+			
+			if(!result.data.result){
+				text += "<li class='alert alert-success'>Test: passed</li>";
+			}else{
+				text += "<li class='alert alert-danger'>Test: failed</li>";
+			}
+			
+			
+			setInformation("<ul class='list-unstyled'>" + text + "</ul>");
+		}
+	});
+}
+
+function setInformation(message){
+	if(message != undefined){
+		gel("dialog.info").innerHTML = message;
+		gel('dialog.info').style.display = "block";
+	}else{
+		gel('dialog.info').style.display = "none";
+	}
+}
+
+function disableOrEnableButton(){
+	if(gel('content_id').innerHTML.trim().length){
+		gel('save_button').disabled = false;
+		gel('ok_button').disabled = false;
+	}else{
+		gel('save_button').disabled = true;
+		gel('ok_button').disabled = true;
+	}
+	
+}
+
+function submitCancel() {
+	gel('info_message').style.display = "none";
+	GlideDialogWindow.get().destroy();
+	return false;
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_novrp_cr_code_review.rule.test.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:requires name="styles/heisenberg/heisenberg_all.css" includes="true" />
+	
+	<g:evaluate var="jvar_sysId" expression="RP.getParameterValue('sysparm_sysId')" />
+	<g:evaluate var="jvar_table" expression="RP.getParameterValue('sysparm_table')" />
+	
+	<g:evaluate var="jvar_query">
+		var result = "";
+		result = "sys_script";
+		result;
+	</g:evaluate>
+	
+	<g:ui_form id="code_review.rule.test.form">
+		<input type="hidden" id="rule" name="rule" value="${sysparm_sysId}" class="form-control"/>
+		<div class="form-group">	
+			<j:if test="${jvar_table != ''}">
+				<label>Record</label>
+				<g:ui_reference id="record"
+								name="record"
+								table="${jvar_table}"
+								query="active=true"
+								class="form-control"
+								onChange="runTest()"/>
+			</j:if>
+		</div>
+	</g:ui_form>
+	<div id="dialog.info">
+	</div>
+	<footer id="hr_dialog_footer" class="modal-footer">
+		<span id = 'info_message' ></span>
+		<button id="cancel_button" class="btn btn-default" onClick="return submitCancel();">
+			${gs.getMessage('Close')}
+		</button>
+		<button id="run_button" class="btn btn-primary" onClick="return runTest();">
+			${gs.getMessage('Run')}
+		</button>
+	</footer>
+</j:jelly>]]></html>
+        <name>code_review.rule.test</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-01-19 09:36:46</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>407d075b4f547a4062b50fbf0310c755</sys_id>
+        <sys_mod_count>92</sys_mod_count>
+        <sys_name>code_review.rule.test</sys_name>
+        <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
+        <sys_update_name>sys_ui_page_407d075b4f547a4062b50fbf0310c755</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-01-19 12:35:44</sys_updated_on>
+    </sys_ui_page>
+</record_update>

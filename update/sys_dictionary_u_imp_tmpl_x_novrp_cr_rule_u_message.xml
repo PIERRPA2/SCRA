@@ -3,6 +3,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="u_message" table="u_imp_tmpl_x_novrp_cr_rule">
         <active>true</active>
         <array>false</array>
+        <array_denormalized>false</array_denormalized>
         <attributes>import_attribute_name=Message,edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
