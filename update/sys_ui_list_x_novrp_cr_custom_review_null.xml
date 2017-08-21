@@ -4,137 +4,167 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>63a2014e4f76b640b734260f0310c705</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>27b136904f34830040100fbf0310c75d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>applications</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>e3a2014e4f76b640b734260f0310c705</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>a7b136904f34830040100fbf0310c75d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>change_request_number</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>67a2014e4f76b640b734260f0310c705</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>2bb136904f34830040100fbf0310c75d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
+            <average_value>true</average_value>
             <element>changes</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
+            <max_value>true</max_value>
+            <min_value>true</min_value>
             <position>3</position>
-            <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>e7a2014e4f76b640b734260f0310c705</sys_id>
+            <sum>true</sum>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>abb136904f34830040100fbf0310c75d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>errors</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>6ba2014e4f76b640b734260f0310c705</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>2fb136904f34830040100fbf0310c75d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>findings</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>eba2014e4f76b640b734260f0310c705</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>afb136904f34830040100fbf0310c75d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>include_inactive_record</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>6fa2014e4f76b640b734260f0310c705</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>23b136904f34830040100fbf0310c75e</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>recommendations</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>efa2014e4f76b640b734260f0310c705</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>a3b136904f34830040100fbf0310c75e</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>update_sets</element>
-            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">eba2014e4f76b640b734260f0310c704</list_id>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_id>63a2014e4f76b640b734260f0310c706</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>27b136904f34830040100fbf0310c75e</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>RAIUP1</sys_updated_by>
-            <sys_updated_on>2017-05-19 08:54:32</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>a7b136904f34830040100fbf0310c75e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_tags</element>
+            <list_id display_value="x_novrp_cr_custom_review" element="NULL" name="x_novrp_cr_custom_review" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">afb136904f34830040100fbf0310c75c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_id>2bb136904f34830040100fbf0310c75e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -147,13 +177,13 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>RAIUP1</sys_created_by>
-            <sys_created_on>2017-05-19 08:54:32</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:35:59</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>eba2014e4f76b640b734260f0310c704</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>afb136904f34830040100fbf0310c75c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_name>x_novrp_cr_custom_review</sys_name>
             <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
             <sys_policy/>
@@ -161,7 +191,7 @@
             <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
             <sys_update_name>sys_ui_list_x_novrp_cr_custom_review_null</sys_update_name>
             <sys_updated_by>PIERRPA2</sys_updated_by>
-            <sys_updated_on>2017-08-21 16:29:20</sys_updated_on>
+            <sys_updated_on>2017-08-21 16:35:59</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

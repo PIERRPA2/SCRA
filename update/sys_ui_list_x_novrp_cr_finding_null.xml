@@ -4,107 +4,137 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">083d8d9d4fb1f68062b50fbf0310c721</list_id>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-03-28 08:42:13</sys_created_on>
-            <sys_id>043d01dd4fb1f68062b50fbf0310c75e</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>40e13a904f34830040100fbf0310c78d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-03-28 08:42:13</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>change.related_record</element>
-            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">083d8d9d4fb1f68062b50fbf0310c721</list_id>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-03-28 08:42:13</sys_created_on>
-            <sys_id>883d01dd4fb1f68062b50fbf0310c75e</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>c0e13a904f34830040100fbf0310c78d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-03-28 08:42:13</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>rule</element>
-            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">083d8d9d4fb1f68062b50fbf0310c721</list_id>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-03-28 08:42:13</sys_created_on>
-            <sys_id>0c3d01dd4fb1f68062b50fbf0310c75e</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>44e13a904f34830040100fbf0310c78d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-03-28 08:42:13</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>comments</element>
-            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">083d8d9d4fb1f68062b50fbf0310c721</list_id>
+            <element>status</element>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-03-28 08:42:13</sys_created_on>
-            <sys_id>8c3d01dd4fb1f68062b50fbf0310c75e</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>c4e13a904f34830040100fbf0310c78d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-03-28 08:42:13</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>type</element>
-            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">083d8d9d4fb1f68062b50fbf0310c721</list_id>
+            <element>sys_tags</element>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-03-28 08:42:13</sys_created_on>
-            <sys_id>003d01dd4fb1f68062b50fbf0310c75f</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>48e13a904f34830040100fbf0310c78d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-03-28 08:42:13</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>change.application</element>
-            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">083d8d9d4fb1f68062b50fbf0310c721</list_id>
+            <element>comments</element>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-03-28 08:42:13</sys_created_on>
-            <sys_id>803d01dd4fb1f68062b50fbf0310c75f</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>c8e13a904f34830040100fbf0310c78d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-03-28 08:42:13</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>change.update_set</element>
-            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">083d8d9d4fb1f68062b50fbf0310c721</list_id>
+            <element>type</element>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-03-28 08:42:13</sys_created_on>
-            <sys_id>043d01dd4fb1f68062b50fbf0310c75f</sys_id>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>4ce13a904f34830040100fbf0310c78d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-03-28 08:42:13</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>change.application</element>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>cce13a904f34830040100fbf0310c78d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>change.update_set</element>
+            <list_id display_value="x_novrp_cr_finding" element="NULL" name="x_novrp_cr_finding" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c8e13a904f34830040100fbf0310c78c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_id>40e13a904f34830040100fbf0310c78e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -117,13 +147,13 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-03-28 08:42:12</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_by>PIERRPA2</sys_created_by>
+            <sys_created_on>2017-08-21 16:36:34</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>083d8d9d4fb1f68062b50fbf0310c721</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>c8e13a904f34830040100fbf0310c78c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_name>x_novrp_cr_finding</sys_name>
             <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
             <sys_policy/>
@@ -131,7 +161,7 @@
             <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
             <sys_update_name>sys_ui_list_x_novrp_cr_finding_null</sys_update_name>
             <sys_updated_by>PIERRPA2</sys_updated_by>
-            <sys_updated_on>2017-08-21 16:29:06</sys_updated_on>
+            <sys_updated_on>2017-08-21 16:36:34</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
