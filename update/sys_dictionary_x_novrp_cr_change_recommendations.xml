@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2016-12-19 08:52:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1e2a5f154ff3e6003fb88e401310c77d</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Recommendations</sys_name>

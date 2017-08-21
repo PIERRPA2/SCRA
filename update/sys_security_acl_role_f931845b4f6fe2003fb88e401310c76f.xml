@@ -16,7 +16,7 @@
         <sys_update_name>sys_security_acl_role_f931845b4f6fe2003fb88e401310c76f</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
         <sys_updated_on>2016-12-12 11:56:51</sys_updated_on>
-        <sys_user_role display_value="x_novrp_cr_change_user" name="x_novrp_cr_change_user">cd310c1b4f6fe2003fb88e401310c74f</sys_user_role>
+        <sys_user_role display_value="x_novrp_cr.change_user" name="x_novrp_cr.change_user">cd310c1b4f6fe2003fb88e401310c74f</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

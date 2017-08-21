@@ -13,7 +13,7 @@
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-01-16 09:06:52</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>7fc9a75e4f9cf6403fb88e401310c7fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_novrp_cr.rule_admin</sys_name>

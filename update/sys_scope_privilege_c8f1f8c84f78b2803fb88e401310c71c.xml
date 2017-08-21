@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>PIERRPA2</sys_created_by>
         <sys_created_on>2017-02-02 16:27:57</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c8f1f8c84f78b2803fb88e401310c71c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sys_widgets</sys_name>

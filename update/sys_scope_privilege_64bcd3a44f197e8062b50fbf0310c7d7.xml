@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-03-01 14:42:22</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>64bcd3a44f197e8062b50fbf0310c7d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sys_ui_hp_date</sys_name>

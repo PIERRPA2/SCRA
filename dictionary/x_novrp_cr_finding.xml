@@ -2,10 +2,11 @@
 <database>
     <element label="Finding" max_length="40" name="x_novrp_cr_finding" type="collection">
         <element label="Change" max_length="32" name="change" read_only="true" reference="x_novrp_cr_change" type="reference"/>
+        <element label="Comments" max_length="1000" name="comments" type="string"/>
         <element label="Custom Review" max_length="32" name="custom_review" reference="x_novrp_cr_custom_review" type="reference"/>
         <element label="Message" max_length="4000" name="message" type="string"/>
         <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element label="Rule" max_length="32" name="rule" reference="x_novrp_cr_rule" type="reference"/>
+        <element label="Rule" max_length="32" name="rule" reference="x_novrp_cr_rule" reference_qual="javascript: new FilterRules().getFilter(current.change);" type="reference" use_reference_qualifier="advanced"/>
         <element choice="3" default="new" label="Status" max_length="40" name="status" type="string">
             <choice>
                 <element label="New" sequence="1" value="new"/>

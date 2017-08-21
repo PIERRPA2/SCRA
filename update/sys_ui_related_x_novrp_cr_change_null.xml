@@ -29,15 +29,15 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>988b141b4fafe2003fb88e401310c718</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_name>Change - Default view</sys_name>
             <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
             <sys_update_name>sys_ui_related_x_novrp_cr_change_null</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2016-12-12 13:51:43</sys_updated_on>
+            <sys_updated_by>PIERRPA2</sys_updated_by>
+            <sys_updated_on>2017-08-21 16:29:15</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

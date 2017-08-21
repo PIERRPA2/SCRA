@@ -6,11 +6,12 @@
         <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
         <element label="Custom Review" max_length="32" name="custom_review" reference="x_novrp_cr_custom_review" type="reference"/>
         <element default="0" label="Errors" max_length="40" name="errors" type="integer"/>
+        <element label="Feedback" max_length="4000" name="feedback" type="string"/>
         <element default="0" label="Findings" max_length="40" name="findings" type="integer"/>
         <element label="HTML" max_length="8000" name="html" type="html"/>
         <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element default="0" label="Recommendations" max_length="40" name="recommendations" type="integer"/>
-        <element dependent="table" dependent_on_field="table" label="Related Record" max_length="32" name="related_record" read_only="true" type="document_id" use_dependent_field="true"/>
+        <element dependent="table" dependent_on_field="table" label="Related Record" max_length="32" name="related_record" type="document_id" use_dependent_field="true"/>
         <element label="Server Script" max_length="8000" name="server_script" type="script"/>
         <element label="Table" max_length="40" name="table" read_only="true" type="table_name"/>
         <element label="Update Set" max_length="40" name="update_set" type="string"/>

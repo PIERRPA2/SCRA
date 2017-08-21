@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_novrp_cr.FilterRules</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FilterRules</name>
+        <script><![CDATA[var FilterRules = Class.create();
+FilterRules.prototype = {
+    initialize: function() {
+    },
+	
+	getFilter: function(change){
+		var result = "";
+		var glideChange = new GlideRecord("x_novrp_cr_change");
+		
+		if(!glideChange.get(change)){
+			return ;
+		}
+		
+		var table = glideChange.getValue("table");
+		var glideRule = new GlideRecord("x_novrp_cr_rule");
+		glideRule.addQuery("table", table);
+		glideRule.query();
+		
+		while(glideRule.next()){
+			result += glideRule.getUniqueValue() + ",";
+		}
+		
+		return "sys_idIN" + result;
+	},
+
+    type: 'FilterRules'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-04-11 11:16:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>75b5f5714f82bac062b50fbf0310c778</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>FilterRules</sys_name>
+        <sys_package display_value="Code Review" source="x_novrp_cr">1f3fb7474f6fe2003fb88e401310c7e7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Code Review">1f3fb7474f6fe2003fb88e401310c7e7</sys_scope>
+        <sys_update_name>sys_script_include_75b5f5714f82bac062b50fbf0310c778</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-04-11 12:16:05</sys_updated_on>
+    </sys_script_include>
+</record_update>

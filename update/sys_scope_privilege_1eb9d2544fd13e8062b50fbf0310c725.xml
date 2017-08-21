@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>PIERRPA2</sys_created_by>
         <sys_created_on>2017-02-28 15:11:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1eb9d2544fd13e8062b50fbf0310c725</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_novrp_finance_request_flow</sys_name>
